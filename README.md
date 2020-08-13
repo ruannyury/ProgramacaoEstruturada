@@ -1,2 +1,2 @@
-# Programa-o-Estruturada
+# Programação Estruturada
 Projeto de Programação Estruturada
