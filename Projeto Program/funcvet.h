@@ -104,7 +104,7 @@ void frequencia (int Vetor[],int numeroElementos){
 		if (Vetor[contador]==valorAtual)
 		    numeroVezes++;
 		else{
-		    printf("\nFrequencia do valor %d = %d",valorAtual,numeroVezes);
+		    printf("\nFrequencia do valor %d = %d\n",valorAtual,numeroVezes);
 		    valorAtual= Vetor[contador];
 		    numeroVezes = 1; 
 		}

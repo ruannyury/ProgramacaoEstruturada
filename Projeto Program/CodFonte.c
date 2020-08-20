@@ -13,15 +13,17 @@
 
 int main(){
 
+    setlocale(LC_ALL, "Portuguese");
+
     int vetor[1000];
     int numElementos;
     int numAtual;
 
-    puts("****Projeto de Programação Estruturada!!!****");
-    puts("Esse programa irá fazer cálculos estatísticos com os dados obtidos.");
+    puts("****PROJETO DE PROGRAMAÇÃO ESTRUTURADA!!!****");
+    puts("\nEsse programa irá fazer cálculos estatísticos com os dados obtidos.");
     puts("Dados: EM QUANTAS PROVAS O ALUNO TIROU NOTA ALTA.");
 
-    printf("Digite quantos alunos responderam à pesquisa: ");
+    printf("\nDigite quantos alunos responderam à pesquisa: ");
     scanf("%d", &numElementos);
 
     for (numAtual=0;numAtual<numElementos;numAtual++){
@@ -34,12 +36,12 @@ int main(){
 
     puts("******EIS AS ESTATÍSTICAS DOS DADOS:******");
 
-    printf("O maior valor é: %d", maiorvalor(vetor,numElementos));
+    printf("\nO maior valor é: %d", maiorvalor(vetor,numElementos));
     printf("\nO menor valor é: %d", menorvalor(vetor));
     printf("\nA amplitude é: %d", amplitude(vetor[0],maiorvalor(vetor,numElementos)));
-    printf("\nMédia é: %f", media(vetor,numElementos));
+    printf("\nA média é: %f", media(vetor,numElementos));
     printf("\nA mediana é: %.2f", mediana(vetor,numElementos));
-    printf("\nO desvio padrao é; %f", desvioPadrao(vetor,numElementos,media(vetor,numElementos)));
+    printf("\nO desvio padrão é: %f\n", desvioPadrao(vetor,numElementos,media(vetor,numElementos)));
 
     frequencia(vetor, numElementos);
 } 
