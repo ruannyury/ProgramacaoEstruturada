@@ -21,13 +21,13 @@ int main(){
 
     puts("****PROJETO DE PROGRAMAÇÃO ESTRUTURADA!!!****");
     puts("\nEsse programa irá fazer cálculos estatísticos com os dados obtidos.");
-    puts("Dados: EM QUANTAS PROVAS O ALUNO TIROU NOTA ALTA.");
+    puts("Dados: EM QUANTAS PROVAS O ALUNO TIROU NOTA ALTA (IGUAL OU SUPERIOR À MÉDIA 6).");
 
     printf("\nDigite quantos alunos responderam à pesquisa: ");
     scanf("%d", &numElementos);
 
     for (numAtual=0;numAtual<numElementos;numAtual++){
-        printf("Aluno %d: ", numAtual + 1);
+        printf("Em quantas provas o aluno %d tirou notas igual ou acima da média: ", numAtual + 1);
         scanf("%d", &vetor[numAtual]);
     }
 
