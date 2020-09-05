@@ -6,7 +6,7 @@ void impressao(int vetor[], int qtd){
 	
 	printf("DADOS ORDENADOS:\n");
     for (int x=0; x < qtd ; x++)
-    printf("V[%d]: %d \n", x, vetor[x]); 
+    	printf("V[%d]: %d \n", x, vetor[x]); 
 }
 
 void troca(int *A, int *B){ 
