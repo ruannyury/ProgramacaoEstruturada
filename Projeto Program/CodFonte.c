@@ -11,11 +11,17 @@
 #include <locale.h>
 #include "funcvet.h"
 
+typedef struct {
+    char nome[31];
+    int idade;
+    int nota;
+    int codigo;
+}registro_aluno;
+
 int main(){
 
     setlocale(LC_ALL, "Portuguese");
 
-    int vetor[1000];
     int numElementos;
     int numAtual;
 
@@ -25,6 +31,8 @@ int main(){
 
     printf("\nDigite quantos alunos responderam à pesquisa: ");
     scanf("%d", &numElementos);
+
+    int vetor[numElementos];
 
     for (numAtual=0;numAtual<numElementos;numAtual++){
         printf("Em quantas provas o aluno %d tirou notas igual ou acima da média: ", numAtual + 1);
